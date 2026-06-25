@@ -12,4 +12,5 @@ public class KafkaProducer {
     public KafkaProducer(KafkaTemplate<String,byte[]> kafkaTemplate){
         this.kafkaTemplate = kafkaTemplate;
     }
+    
 }
