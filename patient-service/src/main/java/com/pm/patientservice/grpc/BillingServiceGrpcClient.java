@@ -16,7 +16,7 @@ public class BillingServiceGrpcClient {
 
     public BillingServiceGrpcClient(
             @Value("${billing.service.address:localhost}") String serverAddress,
-            @Value("${billing.service.grpc.port;9001}") int serverPort
+            @Value("${billing.service.grpc.port:9001}") int serverPort
     ){
 
         ManagedChannel channel = ManagedChannelBuilder.forAddress(serverAddress,serverPort)
